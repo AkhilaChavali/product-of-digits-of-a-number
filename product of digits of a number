@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		long a,product=1,b,digit;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextLong();
+		b=a;
+		while(a>0){
+		    digit=a%10;
+		    product=product*digit;
+		    a=a/10;
+		}
+		System.out.println("The product of digits of a number is:"+product);
+	}
+}
